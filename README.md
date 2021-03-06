@@ -10,5 +10,8 @@
 ## Usage:
 `echo '{"foo": 0}' | docker run --rm -i kongaaron/just-jq .`
 
+It can be especially handy when it's difficult to install jq (say in a Github action workflow) but you need to do a quick parse to pull a value like so: `http httpbin.org/anything|docker run --rm -i kongaaron/just-jq -C -r '.headers."X-Amzn-Trace-Id"'`
+`> Root=1-604337cb-07b199d6109073fa0859d4a1`
+
 ## Design
 Just a containerized way of calling the amazing tool that is `jq`. See https://stedolan.github.io/jq/
