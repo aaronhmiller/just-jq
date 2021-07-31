@@ -29,7 +29,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           HOST=$(docker run --rm saltaaron/just-httpie --pretty none --body httpbin.org/anything|docker run --rm -i saltaaron/just-jq -r '.headers."Host"')
-        if [ $HOST != 'httpbin.org' ] ; then
-          echo "The expected host was not returned. $HOST was returned instead."
-          exit 1;
-        fi
+          if [ $HOST != 'httpbin.org' ] ; then
+            echo "The expected host was not returned. $HOST was returned instead."
+            exit 1;
+          fi
