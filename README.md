@@ -11,7 +11,7 @@ It is especially handy when it's difficult to install jq (say in a Github action
 
 Returning: `Root=1-604337cb-07b199d6109073fa0859d4a1`
 
-And to really go all out: `docker run --rm saltaaron/just-httpie --body httpbin.org/anything|docker run --rm -i saltaaron/just-jq -r '.headers."X-Amzn-Trace-Id"'`
+And to really go all out: `docker run --rm saltaaron/just-httpie httpbin.org/anything|docker run --rm -i saltaaron/just-jq -r '.headers."X-Amzn-Trace-Id"'`
 
 ## Design
 Just a containerized way of calling the amazing tool that is `jq`. See https://stedolan.github.io/jq/
