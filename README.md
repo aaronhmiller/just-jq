@@ -1,4 +1,4 @@
-![CI](https://github.com/aaronhmiller/just-jq/workflows/CI/badge.svg)
+[![CI](https://github.com/aaronhmiller/just-jq/workflows/CI/badge.svg)](https://github.com/aaronhmiller/just-jq/actions)
 
 # just-jq
 
