@@ -7,7 +7,7 @@ Docker container here: https://hub.docker.com/r/saltaaron/just-jq
 ## Usage
 `echo '{"foo": 0}' | docker run --rm -i saltaaron/just-jq .`
 
-It is especially handy when it's difficult to install jq (say in a Github action workflow) but you need to quickly parse a value like so: `http httpbin.org/anything|docker run --rm -i saltaaron/just-jq -C -r '.headers."X-Amzn-Trace-Id"'`
+It is especially handy when it's difficult to install jq (say in a Github action workflow) but you need to quickly parse a value like so: `http httpbin.org/anything|docker run --rm -i saltaaron/just-jq -r '.headers."X-Amzn-Trace-Id"'`
 
 Returning: `Root=1-604337cb-07b199d6109073fa0859d4a1`
 
