@@ -20,4 +20,4 @@ Just a containerized way of calling the amazing tool that is `jq`. See https://s
 
 To build for multiple platforms, start the buildx container: `docker buildx create --use`
 
-To tag, build, and push for multiple platforms:`docker buildx build --platform linux/amd64,linux/arm64 -t <your_docker_hub_account>/just-httpie --push .`
+To tag, build, and push for multiple platforms:`docker buildx build --platform linux/amd64,linux/arm64 -t <your_docker_hub_account>/just-jq --push .`
