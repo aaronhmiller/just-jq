@@ -1,4 +1,5 @@
 [![CI](https://github.com/aaronhmiller/just-jq/workflows/CI/badge.svg)](https://github.com/aaronhmiller/just-jq/actions)
+[![Docker Hub CI](https://github.com/aaronhmiller/just-jq/actions/workflows/docker-hub-ci.yaml/badge.svg)](https://github.com/aaronhmiller/just-jq/actions/workflows/docker-hub-ci.yaml)
 
 # just-jq
 
